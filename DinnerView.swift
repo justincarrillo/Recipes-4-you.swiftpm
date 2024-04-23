@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DinnerView: View {
     var body: some View {
+<<<<<<< Updated upstream
         VStack{
             RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
                 .fill(.green)
@@ -18,11 +19,18 @@ struct DinnerView: View {
                         .font(.system(size:30))
                 }
             Spacer()
+=======
+        
+            Text("View")
+           
+>>>>>>> Stashed changes
         }
     }
-}
 
+<<<<<<< Updated upstream
 
 #Preview {
     DinnerView()
 }
+=======
+>>>>>>> Stashed changes
