@@ -9,7 +9,16 @@ import SwiftUI
 
 struct LunchView: View {
     var body: some View {
-        Text("View")
+        VStack{
+            RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
+                .fill(.pink)
+                .frame(width: 300, height: 70)
+                .overlay{
+                    Text("Lunch Recipes")
+                        .font(.system(size:30))
+                }
+            Spacer()
+        }
     }
 }
 

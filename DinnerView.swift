@@ -9,9 +9,19 @@ import SwiftUI
 
 struct DinnerView: View {
     var body: some View {
-        Text("View")
+        VStack{
+            RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
+                .fill(.green)
+                .frame(width: 300, height: 70)
+                .overlay{
+                    Text("Dinner Recipes")
+                        .font(.system(size:30))
+                }
+            Spacer()
+        }
     }
 }
+
 
 #Preview {
     DinnerView()

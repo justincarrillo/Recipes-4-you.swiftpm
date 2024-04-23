@@ -9,7 +9,16 @@ import SwiftUI
 
 struct BreakFastView: View {
     var body: some View {
-        Text("View")
+        VStack{
+        RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
+            .fill(.blue)
+            .frame(width: 300, height: 70)
+            .overlay{
+        Text("Breakfast Recipes")
+            .font(.system(size:30))
+            }
+                    Spacer()
+        }
     }
 }
 

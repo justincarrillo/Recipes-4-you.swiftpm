@@ -9,10 +9,10 @@ struct Meal {
 
 struct ContentView: View {
     var body: some View {
-        Text("Recipes 4 You")
-            .font(.system(size:40))
         NavigationView {
             VStack(spacing: 20) {
+                Text("Recipes 4 You")
+                    .font(.system(size:40))
                 
                 VStack{
                 NavigationLink{
@@ -22,7 +22,7 @@ struct ContentView: View {
                        .font(.system(size:50))
                         .padding()
                         .foregroundColor(.white)
-                        .background(Color.red)
+                        .background(Color.blue)
                         .cornerRadius(10)
                 }
                     
@@ -34,7 +34,7 @@ struct ContentView: View {
                            .font(.system(size:50))
                             .padding()
                             .foregroundColor(.white)
-                            .background(Color.blue)
+                            .background(Color.pink)
                             .cornerRadius(10)
                     }
                         
@@ -46,7 +46,7 @@ struct ContentView: View {
                                .font(.system(size:50))
                                 .padding()
                                 .foregroundColor(.white)
-                                .background(Color.orange)
+                                .background(Color.green)
                                 .cornerRadius(10)
                         }
                             
@@ -58,7 +58,8 @@ struct ContentView: View {
                                     .font(.system(size:50))
                                     .padding()
                                     .foregroundColor(.white)
-                                    .background(Color.green)
+                                    .background(Color.yellow
+                                    )
                                     .cornerRadius(10)
                             }
                                 
