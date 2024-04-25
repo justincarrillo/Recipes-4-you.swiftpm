@@ -32,8 +32,20 @@ struct SnackView: View {
                         .frame(height: 350)
                     }
                 }
+            Spacer()
+            NavigationLink{
+                ContentView()
+            }label:{
+                Text("Didn't mean to press Snack? Click here")
+                
+                    .foregroundColor(.white)
+                    .background(Color.red)
+                    .cornerRadius(10)
             }
 
 #Preview {
     SnackView()
+        }
+    }
+    
 }

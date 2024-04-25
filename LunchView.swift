@@ -32,8 +32,23 @@ struct LunchView: View {
                         .frame(height: 350)
                     }
                 }
+            Spacer()
+            NavigationLink{
+                ContentView()
+            }label:{
+                Text("Didn't mean to press Lunch? Click here")
+                
+                    .foregroundColor(.white)
+                    .background(Color.red)
+                    .cornerRadius(10)
             }
 
 #Preview {
     LunchView()
+        }
+    }
+    
+    #Preview {
+        LunchView()
+    }
 }
