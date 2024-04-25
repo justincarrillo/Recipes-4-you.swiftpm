@@ -17,10 +17,22 @@ struct BreakFastView: View {
         Text("Breakfast Recipes")
             .font(.system(size:30))
             }
-                    Spacer()
-        }
-    }
-}
+            Divider()
+
+                        
+                        ScrollView {
+                            VStack(spacing: 20) {
+                                ForEach(0..<1) { _ in
+                                    BreakfastButton1()
+                                    BreakfastButton2()
+                                }
+                            }
+                            .padding()
+                        }
+                        .frame(height: 350)
+                    }
+                }
+            }
 
 #Preview {
     BreakFastView()

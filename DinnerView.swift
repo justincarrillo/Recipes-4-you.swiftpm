@@ -17,16 +17,23 @@ struct DinnerView: View {
                     Text("Dinner Recipes")
                         .font(.system(size:30))
                 }
-            Spacer()
-            
-            
-            Text("View")
-            
-        }
-    }
-    
-}
-    
+            Divider()
+
+                        
+                        ScrollView {
+                            VStack(spacing: 20) {
+                                ForEach(0..<1) { _ in
+                                    DinnerButton1()
+                                    DinnerButton2()
+                                }
+                            }
+                            .padding()
+                        }
+                        .frame(height: 350)
+                    }
+                }
+            }
+
     #Preview {
         DinnerView()
     }

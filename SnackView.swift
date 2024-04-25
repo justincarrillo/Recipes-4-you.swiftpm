@@ -17,10 +17,22 @@ struct SnackView: View {
                     Text("Snack Recipes")
                         .font(.system(size:30))
                 }
-            Spacer()
-        }
-    }
-}
+            Divider()
+
+                        
+                        ScrollView {
+                            VStack(spacing: 20) {
+                                ForEach(0..<1) { _ in
+                                    SnackButton1()
+                                    SnackButton2()
+                                }
+                            }
+                            .padding()
+                        }
+                        .frame(height: 350)
+                    }
+                }
+            }
 
 #Preview {
     SnackView()
