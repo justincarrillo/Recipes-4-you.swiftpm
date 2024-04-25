@@ -18,6 +18,15 @@ struct BreakFastView: View {
             .font(.system(size:30))
             }
                     Spacer()
+            
+                VStack{
+                    Image("AvacadoToast-Breakfast")
+                        .resizable()
+                        .frame(width: 200, height: 200, alignment: .center)
+                    Text("Avacado Toast")
+                
+                
+            }
         }
     }
 }
