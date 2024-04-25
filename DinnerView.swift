@@ -19,15 +19,21 @@ struct DinnerView: View {
                 }
             Spacer()
             
-            
-            Text("View")
-            
+            NavigationLink{
+                ContentView()
+            }label:{
+                Text("Didn't mean to press Dinner? Click here")
+                
+                    .foregroundColor(.white)
+                    .background(Color.red)
+                    .cornerRadius(10)
+                
+                
+            }
         }
+        
     }
     
+  
 }
-    
-    #Preview {
-        DinnerView()
-    }
 
