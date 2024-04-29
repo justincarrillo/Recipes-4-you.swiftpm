@@ -17,17 +17,21 @@ struct SnackView: View {
                     Text("Snack Recipes")
                         .font(.system(size:30))
                 }
-            Spacer()
-            NavigationLink{
-                ContentView()
-            }label:{
-                Text("Didn't mean to press Snack? Click here")
-                
-                    .foregroundColor(.white)
-                    .background(Color.red)
-                    .cornerRadius(10)
-            }
-        }
+            Divider()
+
+                        
+                        ScrollView {
+                            VStack(spacing: 20) {
+                                ForEach(0..<1) { _ in
+                                    SnackButton1()
+                                    SnackButton2()
+                                }
+                            }
+                            .padding()
+                        }
+                        .frame(height: 350)
+                    }
+                }
     }
     
 }

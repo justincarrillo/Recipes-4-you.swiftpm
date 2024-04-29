@@ -17,23 +17,25 @@ struct DinnerView: View {
                     Text("Dinner Recipes")
                         .font(.system(size:30))
                 }
-            Spacer()
+            Divider()
+
+                        
+                        ScrollView {
+                            VStack(spacing: 20) {
+                                ForEach(0..<1) { _ in
+                                    DinnerButton1()
+                                    DinnerButton2()
+                                }
+                            }
+                            .padding()
+                        }
+                        .frame(height: 350)
+                    }
+                }
             
-            NavigationLink{
-                ContentView()
-            }label:{
-                Text("Didn't mean to press Dinner? Click here")
-                
-                    .foregroundColor(.white)
-                    .background(Color.red)
-                    .cornerRadius(10)
-                
-                
             }
-        }
-        
+
+    #Preview {
+        DinnerView()
     }
-    
-  
-}
 
