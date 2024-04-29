@@ -12,7 +12,12 @@ struct Dinner1: View {
         NavigationView{
             
             
-            Text("View")
+            Text("Beef Tacos")
+            
+            //<<<<<<< Updated upstream
+            
+            
+            
             NavigationLink{
                 ContentView()
             }label:{
@@ -37,7 +42,7 @@ struct Dinner1: View {
         }
     }
     
-  //  #Preview {
+    //#Preview {
       //  Dinner1()
     //}
 }
