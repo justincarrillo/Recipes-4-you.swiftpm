@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BreakFast1: View {
+    
     var body: some View {
         Text("View")
         Text(" How to make pancakes, ingredients you need, FLour, baking powder, sugar, salt, milk, egg.")
