@@ -1,4 +1,4 @@
-//
+////
 //  Breakfast1.swift
 //  Recipes 4 you
 //
@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct BreakFast1: View {
+    
     var body: some View {
         Text("View")
+        Image("PancakesBreakfast1")
         Text(" How to make pancakes, ingredients you need, FLour, baking powder, sugar, salt, milk, egg.")
         Image("pancke")
     }
