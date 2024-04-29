@@ -31,9 +31,7 @@ struct Dinner1: View {
                 Image("Birria-Tacos-114")
             }
             
-            //=======
             
-            //>>>>>>> Stashed changes
             
             
             
@@ -42,7 +40,8 @@ struct Dinner1: View {
         }
     }
     
-    //#Preview {
-      //  Dinner1()
+    //    #Preview {
+    //        Dinner1()
+    //    }
     //}
 }
