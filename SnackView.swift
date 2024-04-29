@@ -33,3 +33,6 @@ struct SnackView: View {
                     }
                 }
     }
+    
+}
+

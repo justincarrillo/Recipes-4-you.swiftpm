@@ -13,6 +13,7 @@ struct BreakFast1: View {
         Text("Pancakes")
         Image("PancakesBreakfast1")
         Text(" How to make pancakes, ingredients you need, FLour, baking powder, sugar, salt, milk, egg.")
+        Image("pancke")
     }
 }
 
