@@ -11,29 +11,29 @@ struct DinnerView: View {
     var body: some View {
         VStack{
             RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
-                .fill(.green)
+                .fill(.blue)
                 .frame(width: 300, height: 70)
                 .overlay{
                     Text("Dinner Recipes")
                         .font(.system(size:30))
                 }
-            Divider()
-
-                        
-                        ScrollView {
-                            VStack(spacing: 20) {
-                                ForEach(0..<1) { _ in
-                                    DinnerButton1()
-                                    DinnerButton2()
-                                }
-                            }
-                            .padding()
-                        }
-                        .frame(height: 350)
-                    }
+        }
+        Divider()
+        
+        
+        ScrollView {
+            VStack(spacing: 20) {
+                ForEach(0..<1) { _ in
+                    DinnerButton1()
+                    DinnerButton2()
                 }
-            
             }
+            .padding()
+        }
+        .frame(height: 350)
+    }
+}
+            
 
     #Preview {
         DinnerView()

@@ -9,22 +9,18 @@ import SwiftUI
 //uytesing
 struct BreakfastButton2: View {
     var body: some View {
-        Button(action: {
             NavigationView{
                 NavigationLink {
                     BreakFast2()
                 } label: {
-                    BreakfastButton2()
-                }
-
-            }
-                }) {
                     VStack {
-                        Rectangle()
-                            .foregroundColor(.gray)
-                            .frame(width: 300, height: 200)
-                            .border(Color.black, width: 2)
-                        
+                        ZStack {
+                            Rectangle()
+                                .foregroundColor(.gray)
+                                .frame(width: 300, height: 200)
+                                .border(Color.black, width: 2)
+                            Image("Breakfast2")
+                        }
                         Text("Breakfast Burrito")
                             .font(.headline)
                             .padding(.top, 8)
@@ -42,7 +38,12 @@ struct BreakfastButton2: View {
                     .border(Color.white, width: 2)
                 }
             }
-        }
+    }
+                                    }
+
+            
+
+                    
             #Preview {
                 BreakfastButton2()
             }
