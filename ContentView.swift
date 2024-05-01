@@ -15,53 +15,53 @@ struct ContentView: View {
                     .font(.system(size:40))
                 
                 VStack{
-                NavigationLink{
-                    BreakFastView()
-                }label:{
-                    Text("Breakfast")
-                       .font(.system(size:50))
-                        .padding()
-                        .foregroundColor(.white)
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                }
-                    
-                    VStack{
                     NavigationLink{
-                        LunchView()
+                        BreakFastView()
                     }label:{
-                        Text("Lunch")
-                           .font(.system(size:50))
+                        Text("Breakfast")
+                            .font(.system(size:50))
                             .padding()
                             .foregroundColor(.white)
-                            .background(Color.pink)
+                            .background(Color.blue)
                             .cornerRadius(10)
                     }
-                        
-                        VStack{
+                    
+                    VStack{
                         NavigationLink{
-                            DinnerView()
+                            LunchView()
                         }label:{
-                            Text("Dinner")
-                               .font(.system(size:50))
+                            Text("Lunch")
+                                .font(.system(size:50))
                                 .padding()
                                 .foregroundColor(.white)
-                                .background(Color.green)
+                                .background(Color.pink)
                                 .cornerRadius(10)
                         }
-                            
-                            VStack{
+                        
+                        VStack{
                             NavigationLink{
-                                SnackView()
+                                DinnerView()
                             }label:{
-                                Text("Snack")
+                                Text("Dinner")
                                     .font(.system(size:50))
                                     .padding()
                                     .foregroundColor(.white)
-                                    .background(Color.yellow
-                                    )
+                                    .background(Color.green)
                                     .cornerRadius(10)
                             }
+                            
+                            VStack{
+                                NavigationLink{
+                                    SnackView()
+                                }label:{
+                                    Text("Snack")
+                                        .font(.system(size:50))
+                                        .padding()
+                                        .foregroundColor(.white)
+                                        .background(Color.yellow
+                                        )
+                                        .cornerRadius(10)
+                                }
                                 
                             }
                         }

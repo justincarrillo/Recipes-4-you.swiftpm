@@ -16,34 +16,34 @@ struct BreakfastButton2: View {
                 } label: {
                     BreakfastButton2()
                 }
-
+                
             }
-                }) {
-                    VStack {
-                        Rectangle()
-                            .foregroundColor(.gray)
-                            .frame(width: 300, height: 200)
-                            .border(Color.black, width: 2)
-                        
-                        Text("Breakfast Burrito")
-                            .font(.headline)
-                            .padding(.top, 8)
-                            .foregroundColor(.black)
-                        
-                        
-                        Text("Calories: 400")
-                            .font(.subheadline)
-                            .foregroundColor(.black)
-                    }
-                    .padding(8)
-                    .background(Color.cyan)
-                    .cornerRadius(10)
-                    .shadow(radius: 5)
-                    .border(Color.white, width: 2)
-                }
+        }) {
+            VStack {
+                Rectangle()
+                    .foregroundColor(.gray)
+                    .frame(width: 300, height: 200)
+                    .border(Color.black, width: 2)
+                
+                Text("Breakfast Burrito")
+                    .font(.headline)
+                    .padding(.top, 8)
+                    .foregroundColor(.black)
+                
+                
+                Text("Calories: 400")
+                    .font(.subheadline)
+                    .foregroundColor(.black)
             }
+            .padding(8)
+            .background(Color.cyan)
+            .cornerRadius(10)
+            .shadow(radius: 5)
+            .border(Color.white, width: 2)
         }
-            #Preview {
-                BreakfastButton2()
-            }
+    }
+}
+#Preview {
+    BreakfastButton2()
+}
 

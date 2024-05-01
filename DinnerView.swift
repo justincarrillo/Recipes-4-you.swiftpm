@@ -18,24 +18,24 @@ struct DinnerView: View {
                         .font(.system(size:30))
                 }
             Divider()
-
-                        
-                        ScrollView {
-                            VStack(spacing: 20) {
-                                ForEach(0..<1) { _ in
-                                    DinnerButton1()
-                                    DinnerButton2()
-                                }
-                            }
-                            .padding()
-                        }
-                        .frame(height: 350)
+            
+            
+            ScrollView {
+                VStack(spacing: 20) {
+                    ForEach(0..<1) { _ in
+                        DinnerButton1()
+                        DinnerButton2()
                     }
                 }
-            
+                .padding()
             }
-
-    #Preview {
-        DinnerView()
+            .frame(height: 350)
+        }
     }
+    
+}
+
+#Preview {
+    DinnerView()
+}
 

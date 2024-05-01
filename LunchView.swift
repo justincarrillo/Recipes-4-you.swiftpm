@@ -18,22 +18,22 @@ struct LunchView: View {
                         .font(.system(size:30))
                 }
             Divider()
-
-                        
-                        ScrollView {
-                            VStack(spacing: 20) {
-                                ForEach(0..<1) { _ in
-                                    LunchButton1()
-                                    LunchButton2()
-                                }
-                            }
-                            .padding()
-                        }
-                        .frame(height: 350)
+            
+            
+            ScrollView {
+                VStack(spacing: 20) {
+                    ForEach(0..<1) { _ in
+                        LunchButton1()
+                        LunchButton2()
                     }
                 }
+                .padding()
             }
+            .frame(height: 350)
+        }
+    }
+}
 
 #Preview {
     LunchView()
-        }
+}

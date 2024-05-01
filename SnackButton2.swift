@@ -16,33 +16,33 @@ struct SnackButton2: View {
                 } label: {
                     SnackButton2()
                 }
-
+                
             }
-                }) {
-                    VStack {
-                        Rectangle()
-                            .foregroundColor(.gray)
-                            .frame(width: 300, height: 200)
-                            .border(Color.black, width: 2)
-                        
-                        Text("Concession Stand Crackers")
-                            .font(.headline)
-                            .padding(.top, 8)
-                            .foregroundColor(.black)
-                        
-                        
-                        Text("Calories: 15 Per Cracker")
-                            .font(.subheadline)
-                            .foregroundColor(.black)
-                    }
-                    .padding(8)
-                    .background(Color.cyan)
-                    .cornerRadius(10)
-                    .shadow(radius: 5)
-                    .border(Color.white, width: 2)
-                }
+        }) {
+            VStack {
+                Rectangle()
+                    .foregroundColor(.gray)
+                    .frame(width: 300, height: 200)
+                    .border(Color.black, width: 2)
+                
+                Text("Concession Stand Crackers")
+                    .font(.headline)
+                    .padding(.top, 8)
+                    .foregroundColor(.black)
+                
+                
+                Text("Calories: 15 Per Cracker")
+                    .font(.subheadline)
+                    .foregroundColor(.black)
             }
+            .padding(8)
+            .background(Color.cyan)
+            .cornerRadius(10)
+            .shadow(radius: 5)
+            .border(Color.white, width: 2)
         }
-            #Preview {
-                SnackButton2()
-            }
+    }
+}
+#Preview {
+    SnackButton2()
+}
