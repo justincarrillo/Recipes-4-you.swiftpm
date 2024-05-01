@@ -32,7 +32,7 @@ struct SnackView: View {
             .frame(height: 350)
         }
     }
-    
+}
 
 
 
