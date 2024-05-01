@@ -10,7 +10,7 @@ struct BreakFast2: View {
     var body: some View {
         Text("Breakfast Burrito")
             .font(.largeTitle)
-       
+        Image("Breakfast2")
         Text("Ingredients:")
         
         Text("Big Flour Tortillas \n Scrammbled Eggs\nSpicy potatoes (Roast potatoes with smoked paprika)\nAvacado\nPico de gallo\nHot sauce\nChopped Sausage\nother toppings like spinach or black beans")

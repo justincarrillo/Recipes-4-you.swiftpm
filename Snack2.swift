@@ -13,6 +13,7 @@ struct Snack2: View {
             VStack{
                 Text("Concession Stand Crackers")
                 Text("")
+                Image("snack2")
                 Text("Ingredients:")
                 Text("")
                 Text("1 cup of chocolate melting wafers")

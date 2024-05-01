@@ -11,7 +11,7 @@ struct Lunch2: View {
     var body: some View {
         Text("Tuna Salad")
             .font(.largeTitle)
-        
+        Image("Lunch2")
         Text("Ingredients:")
         
         Text("4 (5 ounce) cans tuna packed in water drained\n1 cup of mayonnaise\n1/3 cup of celery finely chopped\n2 tablespoons of red onion minced\n2 tablespoons of fresh lemon juice\n1 clove garlic minced\nsalt and ground pepper")

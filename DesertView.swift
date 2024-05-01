@@ -1,20 +1,20 @@
 //
-//  LunchView.swift
+//  DesertView.swift
 //  Recipes 4 you
 //
-//  Created by Adam Jakubiec on 4/19/24.
+//  Created by Santo Mathew on 5/1/24.
 //
 
 import SwiftUI
 
-struct LunchView: View {
+struct DessertView: View {
     var body: some View {
         VStack{
             RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
-                .fill(.pink)
+                .fill(.green)
                 .frame(width: 300, height: 70)
                 .overlay{
-                    Text("Lunch Recipes")
+                    Text("Dessert Recipes")
                         .font(.system(size:30))
                 }
             Divider()
@@ -23,8 +23,8 @@ struct LunchView: View {
             ScrollView {
                 VStack(spacing: 20) {
                     ForEach(0..<1) { _ in
-                        LunchButton1()
-                        LunchButton2()
+                        //                    DessertButton1()
+                        
                     }
                 }
                 .padding()
@@ -32,8 +32,4 @@ struct LunchView: View {
             .frame(height: 350)
         }
     }
-}
-
-#Preview {
-    LunchView()
 }
