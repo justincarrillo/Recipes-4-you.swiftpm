@@ -34,6 +34,3 @@ struct LunchView: View {
                 }
             }
 
-#Preview {
-    LunchView()
-        }

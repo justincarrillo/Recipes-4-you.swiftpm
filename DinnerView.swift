@@ -35,7 +35,4 @@ struct DinnerView: View {
             
             }
 
-    #Preview {
-        DinnerView()
-    }
-
+   
