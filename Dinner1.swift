@@ -14,7 +14,7 @@ struct Dinner1: View {
             
             Text("Beef Tacos")
             
-            //<<<<<<< Updated upstream
+            
             
             
             
@@ -37,11 +37,7 @@ struct Dinner1: View {
             
             
             
+            
         }
     }
-    
-    //    #Preview {
-    //        Dinner1()
-    //    }
-    //}
 }
