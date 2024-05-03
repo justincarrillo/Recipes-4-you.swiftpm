@@ -25,14 +25,14 @@ struct SnackView: View {
                                 ForEach(0..<1) { _ in
                                     SnackButton1()
                                     SnackButton2()
-                                }
-                            }
-                            .padding()
                         }
-                        .frame(height: 350)
                     }
+                            .padding()
                 }
+                        .frame(height: 350)
+            }
+        }
     }
-    
+
  
 

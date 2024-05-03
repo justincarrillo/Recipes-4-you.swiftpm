@@ -62,7 +62,20 @@ struct ContentView: View {
                                         )
                                         .cornerRadius(10)
                                 }
-                                
+                                VStack{
+                                    NavigationLink{
+                                        DessertView()
+                                    }label:{
+                                        Text("Dessert")
+                                            .font(.system(size:50))
+                                            .padding()
+                                            .foregroundColor(.white)
+                                            .background(Color.purple
+                                            )
+                                            .cornerRadius(10)
+                                    }
+                                    
+                                }
                             }
                         }
                     }
