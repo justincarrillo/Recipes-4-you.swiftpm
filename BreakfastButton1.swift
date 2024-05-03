@@ -21,6 +21,7 @@ struct BreakfastButton1: View {
                             .frame(width: 300, height: 200)
                             .border(Color.black, width: 2)
                         Image("PancakesBreakfast1")
+                            .resizable()
                     }
                     Text("Pancakes")
                         .font(.headline)
