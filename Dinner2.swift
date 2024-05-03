@@ -11,6 +11,7 @@ struct Dinner2: View {
     var body: some View {
         Text("Baked Mac and Cheese")
             .font(.largeTitle)
+        Image("Dinner")
         Text("Ingredients:")
         Text("For the macaroni: 8 ounces of Macaroni\n1 tbsp unsalted butter\nFor the topping:\n2/3 cup panko breadcrumbs\n2 tbsp unsalted butter\n1/4 tsp salt\nFor the sauce:\n4 tbsp of unsalted butter\n1/3 cup flour\n3 cups of milk\n 2 cups of freshly shredded cheese (gruyere is best)\n1 cup freshly shredded mozzarella cheese\nSeasonings(optional):\n1 tsp of garlic powder\n1/2 tsp onion powder\n1/2 tsp mustard powder")
         

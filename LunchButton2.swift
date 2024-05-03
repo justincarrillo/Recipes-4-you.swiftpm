@@ -9,22 +9,18 @@ import SwiftUI
 
 struct LunchButton2: View {
     var body: some View {
-        Button(action: {
             NavigationView{
                 NavigationLink {
                     LunchButton2()
                 } label: {
-                    LunchButton2()
-                }
-
-            }
-                }) {
                     VStack {
-                        Rectangle()
-                            .foregroundColor(.gray)
-                            .frame(width: 300, height: 200)
-                            .border(Color.black, width: 2)
-                        
+                        ZStack {
+                            Rectangle()
+                                .foregroundColor(.gray)
+                                .frame(width: 300, height: 200)
+                                .border(Color.black, width: 2)
+                            Image("Lunch1")
+                        }
                         Text("Tuna Salad")
                             .font(.headline)
                             .padding(.top, 8)
@@ -42,8 +38,13 @@ struct LunchButton2: View {
                     .border(Color.white, width: 2)
                 }
             }
-        }
-            #Preview {
+    }
+
+                }
+
+            
+
+                               #Preview {
                 LunchButton2()
             }
 

@@ -9,22 +9,18 @@ import SwiftUI
 
 struct SnackButton1: View {
     var body: some View {
-        Button(action: {
             NavigationView{
                 NavigationLink {
                     SnackButton1()
                 } label: {
-                    SnackButton1()
-                }
-
-            }
-                }) {
                     VStack {
-                        Rectangle()
-                            .foregroundColor(.gray)
-                            .frame(width: 300, height: 200)
-                            .border(Color.black, width: 2)
-                        
+                        ZStack {
+                            Rectangle()
+                                .foregroundColor(.gray)
+                                .frame(width: 300, height: 200)
+                                .border(Color.black, width: 2)
+                            Image("cookie")
+                        }
                         Text("Cookie")
                             .font(.headline)
                             .padding(.top, 8)
@@ -42,7 +38,12 @@ struct SnackButton1: View {
                     .border(Color.white, width: 2)
                 }
             }
-        }
+    
+                }
+
+            }
+
+                    
             #Preview {
                 SnackButton1()
             }

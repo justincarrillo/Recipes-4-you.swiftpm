@@ -16,7 +16,7 @@ struct Dinner1: View {
             
             
             
-            
+            Image("Birria-Tacos-114")
             
             NavigationLink{
                 ContentView()
