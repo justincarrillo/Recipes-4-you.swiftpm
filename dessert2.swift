@@ -11,11 +11,10 @@ struct dessert2: View {
     var body: some View {
         NavigationView{
             
-            
-            Text("Churros")
-            
+                        
             
             
+            Text("Brownie")
             
             
             
