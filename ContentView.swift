@@ -13,6 +13,10 @@ struct ContentView: View {
             VStack(spacing: 20) {
                 Text("Recipes 4 You")
                     .font(.system(size:40))
+                Spacer()
+                Spacer()
+                Spacer()
+                
                 
                 VStack{
                     NavigationLink{
@@ -74,7 +78,7 @@ struct ContentView: View {
                                             )
                                             .cornerRadius(10)
                                     }
-                                    
+                                    Spacer()
                                 }
                             }
                         }
