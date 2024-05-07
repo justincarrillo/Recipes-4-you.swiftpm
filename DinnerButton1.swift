@@ -11,7 +11,7 @@ struct DinnerButton1: View {
     var body: some View {
         NavigationView{
             NavigationLink {
-                DinnerButton1()
+                Dinner1()
             } label: {
                 VStack {
                     ZStack {
@@ -20,6 +20,7 @@ struct DinnerButton1: View {
                             .frame(width: 300, height: 200)
                             .border(Color.black, width: 2)
                         Image("Birria-Tacos-114")
+                            .resizable()
                     }
                         Text("Tacos")
                             .font(.headline)
