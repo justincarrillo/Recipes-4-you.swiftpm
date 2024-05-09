@@ -17,7 +17,7 @@ struct DessertButton1: View {
                 VStack {
                     ZStack {
                         Rectangle()
-                            .foregroundColor(.gray)
+                            .foregroundColor(.blue)
                             .frame(width: 300, height: 200)
                             .border(Color.black, width: 2)
                             
