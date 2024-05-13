@@ -9,12 +9,44 @@ import SwiftUI
 
 struct Dessert1: View {
     var body: some View {
-        Text("Ingredients you need Cake mix: start with a store bought chocolate cake mix, add a cup fo water to the mix, three eggsadd richness and help bind the batter together, a neutral oil, such as vegetable oil, lends moisture without adding flavor, Store bought chocolate ice cream makes this cake recipe super convenient, and you are going to need oreos.")
-        Text("Steps, Place a cake layer on the sheet tray and top with ice cream, smooth out  the ice cream, top the ice cream with crunchy filling, top the  crunchy bits with  more ice cream,spread out the second layer of ice cream and the second cake layer and freeze, remove cake from freezer and add topping.")
-        Image("ice cream cake")
-        
+        VStack{
+            Text("Ice Cream Cake")
+                .font(.largeTitle)
+            Image("ice cream cake")
+            Text("Ingredients:")
+                .font(.headline)
+                .foregroundColor(.white)            
+            Text("- Chocolate Cake Mix")
+            Text("- Cup of Water")
+            Text("- 3 Eggs")
+            Text("- Neutral Oil")
+            Text("- Chocolate Ice Cream")
+            Text("- Oreos")
+            
+                .foregroundColor(.white)
+                .frame(width: 500, height: 20)
+            
+            Text("Steps:")
+                .font(.headline)
+                .foregroundColor(.white)
+                .padding(.top, 10)
+            
+            Text("1. Place a cake layer on the sheet tray and top with ice cream")
+            Text("2. smooth out  the ice cream.")
+            Text("3. top the ice cream with crunchy filling, top the  crunchy bits with  more ice cream.")
+            Text("4. top the ice cream with crunchy filling!")
+            Text("5. top the  crunchy bits with  more ice cream!")
+            Text("6. spread out the second layer of ice cream and the second cake layer and freeze!")
+            Text("7. remove cake from freezer and add topping!")
+            
+                .foregroundColor(.white)
+        }
+        .padding()
+        .background(Color.cyan)
+        .cornerRadius(20)
+        .padding()
     }
-}
     
+}
     
 
