@@ -34,6 +34,3 @@ struct BreakFastView: View {
 }
 
 
-#Preview {
-    BreakFastView()
-}

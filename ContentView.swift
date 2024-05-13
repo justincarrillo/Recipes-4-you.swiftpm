@@ -9,7 +9,7 @@ struct Meal {
 
 struct ContentView: View {
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack(spacing: 20) {
                 Text("Recipes 4 You")
                     .font(.system(size:40))

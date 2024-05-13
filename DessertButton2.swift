@@ -10,7 +10,7 @@ import SwiftUI
 
 struct DessertButton2: View {
     var body: some View {
-            NavigationView{
+           
                 NavigationLink {
                     dessert2()
                 } label: {
@@ -23,15 +23,16 @@ struct DessertButton2: View {
                             Image("Dessert2")
                                 .resizable()
                         }
-                        Text("Brownie")
-                            .font(.headline)
-                            .padding(.top, 8)
-                            .foregroundColor(.black)
+                            Text("Brownie")
+                                .font(.headline)
+                                .padding(.top, 8)
+                                .foregroundColor(.black)
+                            
+                            
+                            Text("Calories: 132")
+                                .font(.subheadline)
+                                .foregroundColor(.black)
                         
-                        
-                        Text("Calories: 132")
-                            .font(.subheadline)
-                            .foregroundColor(.black)
                     }
                     .padding(8)
                     .background(Color.cyan)
@@ -41,7 +42,7 @@ struct DessertButton2: View {
                 }
             }
     }
-                                    }
+                                    
 
             
 
