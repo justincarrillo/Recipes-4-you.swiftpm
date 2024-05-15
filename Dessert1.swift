@@ -13,6 +13,9 @@ struct Dessert1: View {
             Text("Ice Cream Cake")
                 .font(.largeTitle)
             Image("ice cream cake")
+            .resizable()
+            .frame(width: 300, height: 200)
+            
             Text("Ingredients:")
                 .font(.headline)
                 .foregroundColor(.white)            

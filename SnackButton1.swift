@@ -9,7 +9,6 @@ import SwiftUI
 
 struct SnackButton1: View {
     var body: some View {
-            NavigationView{
                 NavigationLink {
                     Snack1()
                 } label: {
@@ -21,6 +20,7 @@ struct SnackButton1: View {
                                 .border(Color.black, width: 2)
                             Image("cookie")
                                 .resizable()
+                                .frame(width: 300, height: 200)
                         }
                         Text("Cookie")
                             .font(.headline)
@@ -42,7 +42,7 @@ struct SnackButton1: View {
     
                 }
 
-            }
+            
 
                     
             #Preview {

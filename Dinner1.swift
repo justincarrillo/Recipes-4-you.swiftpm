@@ -9,35 +9,49 @@ import SwiftUI
 
 struct Dinner1: View {
     var body: some View {
-        NavigationView{
-            
-            
-            Text("Beef Tacos")
-            
-            
-            
-            Image("Birria-Tacos-114")
-            
-            NavigationLink{
-                ContentView()
-            }label:{
-                Text("Back")
-                    .font(.system(size:50))
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(Color.blue)
-                    .cornerRadius(10)
-                Text("how to make tacos, the ingredients, 2 lb ground beef, 1 chopped onion, 2 tbsp minced garlic, 1 tsp each of salt and pepper, 1/2 tsp cayenne, 4 tsp chilli powder, 2 tsp each of cumin and dried cilantro, 1 1/2 cups of beef broth, white corn tortillas, 1 tbsp oil, shredded monteery jack cheese, taco toppings(sour cream, taco sauce, pico de gallo,  shredded lettuce)")
+            VStack{
+                Text("Beef Tacos")
+                    .font(.largeTitle)
                 Image("Birria-Tacos-114")
+                    .resizable()
+                    .frame(width: 300, height: 200)
+                Text("Ingredients:")
+                    .font(.headline)
+                    .foregroundColor(.white)            
+                Text("- 2 lb ground beef")
+                Text("- 1 chopped onion")
+                Text("- 2 tbsp minced garlic")
+                Text("- 1 tsp each of salt and pepper")
+                Text("- 1/2 tsp cayenne")
+                Text("- 4 tsp chilli powder")
+                Text("- 2 tsp each of cumin and dried cilantro")
+                Text("- 1 1/2 cups of beef broth")
+                Text("- white corn tortillas")
+                Text("- 1 tbsp oil")
+                Text("- shredded monteery jack cheese")
+                Text("- taco toppings(sour cream, taco sauce, pico de gallo,  shredded lettuce)")
+                
+                    .foregroundColor(.white)
+                    .frame(width: 500, height: 20)
+                
+                Text("Steps:")
+                    .font(.headline)
+                    .foregroundColor(.white)
+                    .padding(.top, 10)
+                
+                Text("1. ")
+                Text("2. ")
+                Text("3. ")
+                Text("4. ")
+                Text("5. ")
+                
+                    .foregroundColor(.white)
             }
-            
-            
-            
-            
-            
-            
-            
-            
+            .padding()
+            .background(Color.cyan)
+            .cornerRadius(20)
+            .padding()
         }
+        
     }
-}
+
