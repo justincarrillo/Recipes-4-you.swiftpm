@@ -6,10 +6,8 @@
 //
 
 import SwiftUI
-//uytesing
 struct BreakfastButton2: View {
     var body: some View {
-            NavigationView{
                 NavigationLink {
                     BreakFast2()
                 } label: {
@@ -21,6 +19,7 @@ struct BreakfastButton2: View {
                                 .border(Color.black, width: 2)
                             Image("Breakfast2")
                                 .resizable()
+                                .frame(width: 300, height: 200)
                         }
                         Text("Breakfast Burrito")
                             .font(.headline)
@@ -40,7 +39,7 @@ struct BreakfastButton2: View {
                 }
             }
     }
-                                    }
+                                    
 
             
 

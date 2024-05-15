@@ -12,6 +12,8 @@ struct BreakFast2: View {
             Text("Breakfast Burrito")
                 .font(.largeTitle)
             Image("Breakfast2")
+                .resizable()
+                .frame(width: 300, height: 200)
             Text("Ingredients:")
                 .font(.headline)
                 .foregroundColor(.white)            
