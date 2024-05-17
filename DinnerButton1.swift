@@ -33,7 +33,7 @@ struct DinnerButton1: View {
                     .foregroundColor(.black)
             }
             .padding(8)
-            .background(Color.cyan)
+            .background(Color.green)
             .cornerRadius(10)
             .shadow(radius: 5)
             .border(Color.white, width: 2)
