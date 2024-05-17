@@ -72,7 +72,3 @@ struct BreakFast1: View {
         }
     }
 }
-
-#Preview {
-    BreakFast1()
-}
