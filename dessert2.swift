@@ -9,7 +9,6 @@ import SwiftUI
 
 struct dessert2: View {
     var body: some View {
-        NavigationView{
             VStack{
                 Text("Brownie")
                     .font(.largeTitle)
@@ -52,12 +51,11 @@ struct dessert2: View {
                     .foregroundColor(.white)
             }
             .padding()
-            .background(Color.cyan)
+            .background(Color.purple)
             .cornerRadius(20)
             .padding()
         }
         
     }
+    
 
-
-}

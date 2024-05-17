@@ -11,7 +11,7 @@ struct DessertView: View {
     var body: some View {
         VStack{
             RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
-                .fill(.green)
+                .fill(.purple)
                 .frame(width: 300, height: 70)
                 .overlay{
                     Text("Dessert Recipes")
