@@ -35,12 +35,12 @@ struct Dessert1: View {
                 .padding(.top, 10)
             
             Text("1. Place a cake layer on the sheet tray and top with ice cream")
-            Text("2. smooth out  the ice cream.")
-            Text("3. top the ice cream with crunchy filling, top the  crunchy bits with  more ice cream.")
-            Text("4. top the ice cream with crunchy filling!")
-            Text("5. top the  crunchy bits with  more ice cream!")
-            Text("6. spread out the second layer of ice cream and the second cake layer and freeze!")
-            Text("7. remove cake from freezer and add topping!")
+            Text("2. Smooth out the ice cream.")
+            Text("3. Top the ice cream with crunchy filling, top the crunchy bits with  more ice cream.")
+            Text("4. Top the ice cream with crunchy filling!")
+            Text("5. Top the crunchy bits with more ice cream!")
+            Text("6. Spread out the second layer of ice cream and the second cake layer and freeze!")
+            Text("7. Remove cake from freezer and add topping!")
             
                 .foregroundColor(.white)
         }

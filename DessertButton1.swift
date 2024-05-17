@@ -18,7 +18,7 @@ struct DessertButton1: View {
                         .foregroundColor(.gray)
                         .frame(width: 300, height: 200)
                         .border(Color.black, width: 2)
-                    Image("ice cream cake")
+                    Image("Ice Cream Cake")
                         .resizable()
                         .frame(width: 300, height: 200)
                 }
