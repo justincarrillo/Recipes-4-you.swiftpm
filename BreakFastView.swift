@@ -22,10 +22,10 @@ struct BreakFastView: View {
         
         ScrollView {
             VStack(spacing: 20) {
-                ForEach(0..<1) { _ in
+                
                     BreakfastButton1()
                     BreakfastButton2()
-                }
+                
             }
             .padding()
         }
