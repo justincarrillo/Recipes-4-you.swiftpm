@@ -12,9 +12,11 @@ struct BreakFast1: View {
         VStack{
             Text("Pancakes")
                 .font(.largeTitle)
+            
             Image("PancakesBreakfast1")
                 .resizable()
                 .frame(width: 300, height: 200)
+            
             Text("Ingredients:")
                 .font(.headline)
                 .foregroundColor(.white)            
@@ -38,16 +40,16 @@ struct BreakFast1: View {
             Text("4. Flip and cook until browned on the other side.")
             Text("5. Repeat with remaining batter")
             
-                .foregroundColor(.white)
+                
         }
+        .foregroundColor(.white)
         .padding()
         .background(Color.cyan)
         .cornerRadius(20)
         .padding()
+        
+        
+                
+        
     }
-    
-}
-
-#Preview {
-    BreakFast1()
 }

@@ -14,35 +14,39 @@ struct BreakFast2: View {
             Image("Breakfast2")
                 .resizable()
                 .frame(width: 300, height: 200)
+            
             Text("Ingredients:")
                 .font(.headline)
-                .foregroundColor(.white)            
-                Text("- Big Flour Tortillas")
-                Text("- Scrammbled Eggs")
-                Text("- Spicy potatoes")
-                Text("- (Roast potatoes with smoked paprika)")
-                Text("- Avacado")
-                Text("- Pico de gallo")
-                Text("- Hot sauce")
-                Text("- Chopped Sausage")
-                Text("- other toppings like spinach or black beans")
+                .foregroundColor(.white)
             
-            .foregroundColor(.white)
-            .frame(width: 500, height: 20)
+            Text("- Big Flour Tortillas")
+            Text("- Scrammbled Eggs")
+            Text("- Spicy potatoes (Roast potatoes with smoked paprika)")
+                .multilineTextAlignment(.center)
+            Text("- Avacado")
+            Text("- Pico de gallo")
+            Text("- Hot sauce")
+            Text("- Chopped Sausage")
+            Text("- other toppings like spinach or black beans")
+                .foregroundColor(.white)
+                .frame(width: 500, height: 20)
             
             Text("Steps:")
                 .font(.headline)
                 .foregroundColor(.white)
                 .padding(.top, 10)
             
-                Text("1. Warm up the tortilla, scrammbled eggs")
-                Text("potatoes, and toppings that need to be warmed up")
-                Text("2. Put everything in a strip down the middle of the tortilla.")
-                Text("3. Add the other toppings that you liked.")
-                Text("4. Roll up the burrito into burrito shape and then enjoy!")
-            
-            .foregroundColor(.white)
+            Text("1. Warm up the tortilla, scrammbled eggs, potatoes, and toppings that need to be warmed up")
+                .multilineTextAlignment(.center)
+            Text("2.  Put everything in a strip down the middle of the tortilla.")
+                .multilineTextAlignment(.center)
+            Text("3.  Add the other toppings that you liked.")
+                .multilineTextAlignment(.center)
+            Text("4. Roll up the burrito into burrito shape and then enjoy!")
+                .multilineTextAlignment(.center)
+                
         }
+        .foregroundColor(.white)
         .padding()
         .background(Color.cyan)
         .cornerRadius(20)
@@ -50,6 +54,10 @@ struct BreakFast2: View {
     }
     
 }
+
 #Preview {
     BreakFast2()
 }
+
+
+

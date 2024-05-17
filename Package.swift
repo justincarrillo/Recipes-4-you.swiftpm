@@ -17,11 +17,11 @@ let package = Package(
             name: "Recipes 4 you",
             targets: ["AppModule"],
             bundleIdentifier: "org.jhhs.427045.Recipes-4-you",
-            teamIdentifier: "",
+            teamIdentifier: "J66JK45PJ7",
             displayVersion: "1.0",
             bundleVersion: "1",
-            appIcon: .placeholder(icon: .cat),
-            accentColor: .presetColor(.indigo),
+            appIcon: .placeholder(icon: .carrot),
+            accentColor: .presetColor(.mint),
             supportedDeviceFamilies: [
                 .pad,
                 .phone
