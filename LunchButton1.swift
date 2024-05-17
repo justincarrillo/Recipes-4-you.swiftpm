@@ -9,7 +9,6 @@ import SwiftUI
 
 struct LunchButton1: View {
     var body: some View {
-            NavigationView{
                 NavigationLink {
                     Lunch1()
                 } label: {
@@ -21,6 +20,7 @@ struct LunchButton1: View {
                                 .border(Color.black, width: 2)
                             Image("chicken tender")
                                 .resizable()
+                                .frame(width: 300, height: 200)
                         }
                             Text("Chicken Tenders")
                                 .font(.headline)
@@ -40,7 +40,7 @@ struct LunchButton1: View {
                     }
                 }
             }
-                }
+            
 
             
 

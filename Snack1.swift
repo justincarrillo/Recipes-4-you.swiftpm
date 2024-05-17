@@ -14,7 +14,7 @@ struct Snack1: View {
             .foregroundColor(.orange)
         Image("cookie")
             .resizable()
-            .frame(width:200, height: 200, alignment: .center)
+            .frame(width: 300, height: 200)
             
         Text("Ingredients:")
             .foregroundColor(.blue)
