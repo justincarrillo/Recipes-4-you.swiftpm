@@ -33,7 +33,7 @@ struct SnackButton2: View {
                             .foregroundColor(.black)
                     }
                     .padding(8)
-                    .background(Color.cyan)
+                    .background(Color.yellow)
                     .cornerRadius(10)
                     .shadow(radius: 5)
                     .border(Color.white, width: 2)
