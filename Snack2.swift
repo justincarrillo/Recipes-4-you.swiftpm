@@ -78,6 +78,7 @@ struct Snack2: View {
                     .font(.caption)
                     .foregroundColor(.mint)
                     .multilineTextAlignment(.center)
+                Spacer()
                 
             }
             

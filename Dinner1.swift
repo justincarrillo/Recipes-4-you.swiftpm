@@ -65,7 +65,7 @@ struct Dinner1: View {
                     .foregroundColor(.white)
             }
             .padding()
-            .background(Color.cyan)
+            .background(Color.green)
             .cornerRadius(20)
             .padding()
         }
