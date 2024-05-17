@@ -17,11 +17,10 @@ let package = Package(
             name: "Recipes 4 you",
             targets: ["AppModule"],
             bundleIdentifier: "org.jhhs.427045.Recipes-4-you",
-            teamIdentifier: "",
             displayVersion: "1.0",
             bundleVersion: "1",
-            appIcon: .placeholder(icon: .cat),
-            accentColor: .presetColor(.indigo),
+            appIcon: .asset("AppIcon"),
+            accentColor: .presetColor(.green),
             supportedDeviceFamilies: [
                 .pad,
                 .phone
@@ -31,7 +30,8 @@ let package = Package(
                 .landscapeRight,
                 .landscapeLeft,
                 .portraitUpsideDown(.when(deviceFamilies: [.pad]))
-            ]
+            ],
+            appCategory: "public.app-category.food-and-drink"
         )
     ],
     targets: [
