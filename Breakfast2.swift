@@ -22,7 +22,6 @@ struct BreakFast2: View {
             Text("- Big Flour Tortillas")
             Text("- Scrammbled Eggs")
             Text("- Spicy potatoes (Roast potatoes with smoked paprika)")
-                .multilineTextAlignment(.center)
             Text("- Avacado")
             Text("- Pico de gallo")
             Text("- Hot sauce")
@@ -37,14 +36,10 @@ struct BreakFast2: View {
                 .padding(.top, 10)
             
             Text("1. Warm up the tortilla, scrammbled eggs, potatoes, and toppings that need to be warmed up")
-                .multilineTextAlignment(.center)
             Text("2.  Put everything in a strip down the middle of the tortilla.")
-                .multilineTextAlignment(.center)
             Text("3.  Add the other toppings that you liked.")
-                .multilineTextAlignment(.center)
             Text("4. Roll up the burrito into burrito shape and then enjoy!")
-                .multilineTextAlignment(.center)
-                
+            
         }
         .foregroundColor(.white)
         .padding()

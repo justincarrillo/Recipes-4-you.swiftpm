@@ -23,15 +23,15 @@ struct BreakFastView: View {
         ScrollView {
             VStack(spacing: 20) {
                 
-                    BreakfastButton1()
-                    BreakfastButton2()
+                BreakfastButton1()
+                BreakfastButton2()
                 
             }
-    //        .padding()
+            //        .padding()
             
         }
-   //     .frame(height: 350)
+        //     .frame(height: 350)
     }
-
+}
 
 
