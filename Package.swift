@@ -20,8 +20,8 @@ let package = Package(
             teamIdentifier: "J66JK45PJ7",
             displayVersion: "1.0",
             bundleVersion: "1",
-            appIcon: .placeholder(icon: .carrot),
-            accentColor: .presetColor(.mint),
+            appIcon: .asset("AppIcon"),
+            accentColor: .presetColor(.green),
             supportedDeviceFamilies: [
                 .pad,
                 .phone
@@ -31,7 +31,8 @@ let package = Package(
                 .landscapeRight,
                 .landscapeLeft,
                 .portraitUpsideDown(.when(deviceFamilies: [.pad]))
-            ]
+            ],
+            appCategory: "public.app-category.food-and-drink"
         )
     ],
     targets: [

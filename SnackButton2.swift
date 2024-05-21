@@ -18,7 +18,7 @@ struct SnackButton2: View {
                                 .foregroundColor(.gray)
                                 .frame(width: 300, height: 200)
                                 .border(Color.black, width: 2)
-                            Image("snack2")
+                            Image("Snack2")
                                 .resizable()
                                 .frame(width: 300, height: 200)
                         }
@@ -33,7 +33,7 @@ struct SnackButton2: View {
                             .foregroundColor(.black)
                     }
                     .padding(8)
-                    .background(Color.cyan)
+                    .background(Color.yellow)
                     .cornerRadius(10)
                     .shadow(radius: 5)
                     .border(Color.white, width: 2)

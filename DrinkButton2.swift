@@ -1,16 +1,9 @@
-//
-//  DessertButton1.swift
-//  Recipes 4 you
-//
-//  Created by Santo Mathew on 5/1/24.
-//
-
 import SwiftUI
 
-struct DessertButton1: View {
+struct DrinkButton2: View {
     var body: some View {
         NavigationLink {
-            Dessert1()
+            Drink2()
         } label: {
             VStack {
                 ZStack {
@@ -18,23 +11,22 @@ struct DessertButton1: View {
                         .foregroundColor(.gray)
                         .frame(width: 300, height: 200)
                         .border(Color.black, width: 2)
-                    Image("Ice Cream Cake")
+                    Image("")
                         .resizable()
                         .frame(width: 300, height: 200)
                 }
-                Text("Ice Cream Cake")
+                Text("")
                     .font(.headline)
                     .padding(.top, 8)
                     .foregroundColor(.black)
                 
                 
-                Text("Calories: 412")
+                Text("Calories: ")
                     .font(.subheadline)
                     .foregroundColor(.black)
-                
             }
             .padding(8)
-            .background(Color.purple)
+            .background(Color.orange)
             .cornerRadius(10)
             .shadow(radius: 5)
             .border(Color.white, width: 2)

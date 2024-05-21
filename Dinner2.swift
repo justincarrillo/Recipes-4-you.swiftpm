@@ -39,8 +39,8 @@ struct Dinner2: View {
         .foregroundColor(.white)
         .padding(.top, 10)
     
-    Text("1. Bring a large pot of water to the boil. Add macaroni and cook per packet directions  MINUS 1 minute")
-    Text("2. Drain the water then return pasta to the  pot, add  butter and toss until melted set aside while making the sauce.")
+    Text("1. Bring a large pot of water to the boil. Add macaroni and cook per packet directions MINUS 1 minute")
+    Text("2. Drain the water then return pasta to the  pot, add butter and toss until melted set aside while making the sauce.")
     Text("3. Mix the toppings together and set it aside.")
     Text("4. Preheat oven to 350ºF")
     Text("5. In a large saucepan, melt the butter over medium heat. Add flour and cook while constantly stirring for one minute")

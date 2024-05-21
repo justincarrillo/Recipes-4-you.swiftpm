@@ -18,7 +18,7 @@ struct LunchButton1: View {
                                 .foregroundColor(.gray)
                                 .frame(width: 300, height: 200)
                                 .border(Color.black, width: 2)
-                            Image("chicken tender")
+                            Image("Chicken Tender")
                                 .resizable()
                                 .frame(width: 300, height: 200)
                         }

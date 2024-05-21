@@ -9,52 +9,54 @@ import SwiftUI
 
 struct Dinner1: View {
     var body: some View {
-        NavigationView{
-            
-            
-            Text("Beef Tacos")
+        VStack{
+            Text("Birria Tacos")
                 .font(.largeTitle)
+            Image("Birria-Tacos-114")
+                .resizable()
+                .frame(width: 300, height: 200)
+            Text("Ingredients:")
+                .font(.headline)
                 .foregroundColor(.white)
-        
-                Image("Birria-Tacos-114")
-                    .resizable()
-                    .frame(width: 300, height: 200)
+            Text("- 2 Lb ground beef")
+            Text("- 1 Chopped onion")
+            Text("- 2 Tbsp minced garlic")
+            Text("- 1 Tsp each of salt and pepper")
+            Text("- 1/2 Tsp cayenne")
+            Text("- 4 Tsp chilli powder")
+            Text("- 2 Tsp each of cumin and dried cilantro")
+            Text("- 1 1/2 cups of beef broth")
+            Text("- White corn tortillas")
+            Text("- 1 tbsp oil")
+            Text("- Shredded monteery jack cheese")
+            Text("- Taco toppings(sour cream, taco sauce, pico de gallo,  shredded lettuce)")
             
-                Text("Ingredients:")
-                    .font(.headline)
-                    .foregroundColor(.white)
+                .foregroundColor(.white)
+                .frame(width: 500, height: 20)
             
-                Text("- 2 lb Ground Beef")
-                Text("- Dried Chile Peppers")
-                Text("- Oregano")
-                Text("- 1 tsp each of salt and pepper")
-                Text("-Thyme")
-                Text("- Marjoram")
-                Text("- 2 tsp each of cumin and dried cilantro")
-                Text("- Olive Oil")
-                Text("- corn tortillas")
-                Text("- 2 tsps of white vinegar")
-                Text("- Roma Tomatoes")
-                Text("- Onion")
-                
-                
-                Text("Steps:")
-                    .font(.headline)
-                    .foregroundColor(.white)
-                    .padding(.top, 10)
-                
-                Text("1. Boil the dried peppers for 5 minutes, then remove from heat and let the peppers soak until the water is cool. Drain, reserving some water.")
-                Text("2. Season the beef and sear on all sides in oil in a Dutch oven.")
-                Text("3. Grill the tomatoes until the skin is blistered and begins to peel.")
-                Text("4. Blend the soaked chili peppers with the reserved chile water, tomatoes, vinegar, and seasonings.")
-                Text("5. Strain the sauce and pour over the meat. Cover the Dutch oven and cook until the meat begins to fall apart, basting often. Allow the meat to rest, then shred.")
-                Text("6. Warm the tortillas on the griddle. Fill each tortilla with meat, onions, and cilantro.")
-                    
-            }
-            .padding()
-            .background(Color.green)
-            .cornerRadius(20)
-            .padding()
+            Text("Steps:")
+                .font(.headline)
+                .foregroundColor(.white)
+                .padding(.top, 10)
+            
+            Text("1. Add Ground beef and a chopped onion to a Killet over medium high heat")
+            Text("2. once beef is cooked through drain the grease grease")
+            Text("3. add all seasonings and beef broth.")
+            Text("4. bring a boil then lower the heat")
+            Text("5. cover and let simmer for about 20 minutes untill the  liquid has reduced")
+            Text("6. in a Separate  pan, heat the skillet over medium heat and add som e oil to the skillet")
+            Text("7. Lay out a few of the tortillas and tip them with shredded monterey jack cheese")
+            Text("8. Top each one with a spoonful of taco meat")
+            Text("9. Fold the tortillas over and cook on both sides untill golden brown and crispy")
+            Text("10. Lay the tacos out on paper towels to absorb any extra grease")
+            Text("11. Top tacos with your favorite topping and enjoy!")
+            
+                .foregroundColor(.white)
         }
-        
+        .padding()
+        .background(Color.green)
+        .cornerRadius(20)
+        .padding()
     }
+    
+}
