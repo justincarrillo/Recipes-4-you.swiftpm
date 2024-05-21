@@ -13,56 +13,43 @@ struct Dinner1: View {
             
             
             Text("Beef Tacos")
-            
-            
-            
-            Image("Birria-Tacos-114")
-            
-            NavigationLink{
-                ContentView()
-            }label:{
-                Text("Back")
-                    .font(.system(size:50))
-                    .padding()
-                    .foregroundColor(.white)
-                    .background(Color.blue)
-                    .cornerRadius(10)
-                Text("how to make tacos, the ingredients, 2 lb ground beef, 1 chopped onion, 2 tbsp minced garlic, 1 tsp each of salt and pepper, 1/2 tsp cayenne, 4 tsp chilli powder, 2 tsp each of cumin and dried cilantro, 1 1/2 cups of beef broth, white corn tortillas, 1 tbsp oil, shredded monteery jack cheese, taco toppings(sour cream, taco sauce, pico de gallo,  shredded lettuce)")
-                Text("instructions: add Ground beef and a chopped onion to a Killet over medium high heat. once beef is cooked through drain the grease grease. add all seasonings and beef broth. bring a boil then lower the heat. cover and let simmer for about 20 minutes untill the  liquid has reduced. in a Separate  pan, heat the skillet over medium heat and add som e oil to the skillet. Lay out a few of the tortillas and tip them with shredded monterey jack cheese. Top each one with a spoonful of taco meat. Fold the tortillas over and cook on both sides untill golden brown and crispy. Lay the tacos out on paper towels to absorb any extra grease. Top tacos with your favorite topping and enjoy!")
+                .font(.largeTitle)
+                .foregroundColor(.white)
+        
                 Image("Birria-Tacos-114")
                     .resizable()
                     .frame(width: 300, height: 200)
+            
                 Text("Ingredients:")
                     .font(.headline)
-                    .foregroundColor(.white)            
-                Text("- 2 lb ground beef")
-                Text("- 1 chopped onion")
-                Text("- 2 tbsp minced garlic")
-                Text("- 1 tsp each of salt and pepper")
-                Text("- 1/2 tsp cayenne")
-                Text("- 4 tsp chilli powder")
-                Text("- 2 tsp each of cumin and dried cilantro")
-                Text("- 1 1/2 cups of beef broth")
-                Text("- white corn tortillas")
-                Text("- 1 tbsp oil")
-                Text("- shredded monteery jack cheese")
-                Text("- taco toppings(sour cream, taco sauce, pico de gallo,  shredded lettuce)")
-                
                     .foregroundColor(.white)
-                    .frame(width: 500, height: 20)
+            
+                Text("- 2 lb Ground Beef")
+                Text("- Dried Chile Peppers")
+                Text("- Oregano")
+                Text("- 1 tsp each of salt and pepper")
+                Text("-Thyme")
+                Text("- Marjoram")
+                Text("- 2 tsp each of cumin and dried cilantro")
+                Text("- Olive Oil")
+                Text("- corn tortillas")
+                Text("- 2 tsps of white vinegar")
+                Text("- Roma Tomatoes")
+                Text("- Onion")
+                
                 
                 Text("Steps:")
                     .font(.headline)
                     .foregroundColor(.white)
                     .padding(.top, 10)
                 
-                Text("1. ")
-                Text("2. ")
-                Text("3. ")
-                Text("4. ")
-                Text("5. ")
-                
-                    .foregroundColor(.white)
+                Text("1. Boil the dried peppers for 5 minutes, then remove from heat and let the peppers soak until the water is cool. Drain, reserving some water.")
+                Text("2. Season the beef and sear on all sides in oil in a Dutch oven.")
+                Text("3. Grill the tomatoes until the skin is blistered and begins to peel.")
+                Text("4. Blend the soaked chili peppers with the reserved chile water, tomatoes, vinegar, and seasonings.")
+                Text("5. Strain the sauce and pour over the meat. Cover the Dutch oven and cook until the meat begins to fall apart, basting often. Allow the meat to rest, then shred.")
+                Text("6. Warm the tortillas on the griddle. Fill each tortilla with meat, onions, and cilantro.")
+                    
             }
             .padding()
             .background(Color.green)
@@ -71,4 +58,3 @@ struct Dinner1: View {
         }
         
     }
-
