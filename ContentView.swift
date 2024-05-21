@@ -78,7 +78,22 @@ struct ContentView: View {
                                             )
                                             .cornerRadius(10)
                                     }
-                                    Spacer()
+                                    
+                                    VStack{
+                                        NavigationLink{
+                                            DrinkView()
+                                        }label:{
+                                            Text("Drink")
+                                                .font(.system(size:50))
+                                                .padding()
+                                                .foregroundColor(.white)
+                                                .background(Color.orange
+                                                )
+                                                .cornerRadius(10)
+                                        }
+                                        
+                                        Spacer()
+                                    }
                                 }
                             }
                         }
