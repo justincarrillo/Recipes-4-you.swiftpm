@@ -12,7 +12,7 @@ struct Snack2: View {
         VStack{
             Text("Concession Stand Cracker")
                 .font(.largeTitle)
-            Image("snack2")
+            Image("cracker")
                 .resizable()
                 .frame(width: 300, height: 200)
             Text("Ingredients:")

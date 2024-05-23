@@ -12,7 +12,7 @@ struct Lunch1: View {
         VStack{
             Text("Chicken Tenders")
                 .font(.largeTitle)
-            Image("Lunch1")
+            Image("chicken tender")
                 .resizable()
                 .frame(width: 300, height: 200)
             Text("Ingredients:")

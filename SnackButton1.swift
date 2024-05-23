@@ -18,7 +18,7 @@ struct SnackButton1: View {
                                 .foregroundColor(.gray)
                                 .frame(width: 300, height: 200)
                                 .border(Color.black, width: 2)
-                            Image("Cookie")
+                            Image("cookie")
                                 .resizable()
                                 .frame(width: 300, height: 200)
                         }
