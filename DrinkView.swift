@@ -9,7 +9,7 @@ struct DrinkView: View {
                 .fill(.orange)
                 .frame(width: 300, height: 70)
                 .overlay{
-                    Text("Dessert Recipes")
+                    Text("Drink Recipes")
                         .font(.system(size:30))
                 }
             Divider()

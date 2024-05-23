@@ -11,17 +11,17 @@ struct DrinkButton1: View {
                         .foregroundColor(.gray)
                         .frame(width: 300, height: 200)
                         .border(Color.black, width: 2)
-                    Image("")
+                    Image("Shirley Temple")
                         .resizable()
                         .frame(width: 300, height: 200)
                 }
-                Text("")
+                Text("Shirley Temple")
                     .font(.headline)
                     .padding(.top, 8)
                     .foregroundColor(.black)
                 
                 
-                Text("Calories: ")
+                Text("Calories: 90")
                     .font(.subheadline)
                     .foregroundColor(.black)
             }
