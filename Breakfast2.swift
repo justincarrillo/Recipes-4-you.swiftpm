@@ -22,13 +22,13 @@ struct BreakFast2: View {
             Text("- Big Flour Tortillas")
             Text("- Scrammbled Eggs")
             Text("- Spicy potatoes (Roast potatoes with smoked paprika)")
-            Text("- Avacado")
+            Text("- Avocado")
             Text("- Pico de gallo")
             Text("- Hot sauce")
             Text("- Chopped Sausage")
             Text("- other toppings like spinach or black beans")
                 .foregroundColor(.white)
-                .frame(width: 500, height: 20)
+                
             
             Text("Steps:")
                 .font(.headline)
@@ -41,6 +41,7 @@ struct BreakFast2: View {
             Text("4. Roll up the burrito into burrito shape and then enjoy!")
             
         }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .foregroundColor(.white)
         .padding()
         .background(Color.cyan)

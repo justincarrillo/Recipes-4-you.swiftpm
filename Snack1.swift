@@ -20,7 +20,7 @@ struct Snack1: View {
                 .fontWeight(.bold)
                 .font(.headline)
                 
-                         
+            
             Text("- 1 cup of unsalted butter")
                 .font(.caption)
                 .foregroundColor(.white)

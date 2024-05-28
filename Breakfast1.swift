@@ -27,21 +27,27 @@ struct BreakFast1: View {
             Text("- 3 tablespoons butter, melted")
             Text("- 1 egg")
                 .foregroundColor(.white)
-                .frame(width: 500, height: 20)
+                .frame(width: 500)
             
             Text("Steps:")
                 .font(.headline)
                 .foregroundColor(.white)
                 .padding(.top, 10)
             
-            Text("1. Sift flour, baking powder, sugar, and salt together in a large bowl. Make a well in the center and add milk, melted butter, and egg; mix until smooth")
+            Text("1. Sift flour, baking powder, sugar, and salt together in a large bowl. Make a well in the center and add milk, melted butter, and egg; mix until smooth.")
+                
             Text("2. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake.")
+                
             Text("3. cook until bubbles form and the edges are dry, about 2 to 3 minutes..")
+                
             Text("4. Flip and cook until browned on the other side.")
+                
             Text("5. Repeat with remaining batter")
+                
             
                 
         }
+        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
         .foregroundColor(.white)
         .padding()
         .background(Color.cyan)
@@ -54,3 +60,6 @@ struct BreakFast1: View {
     }
 }
 
+#Preview{
+    BreakFast1()
+}
