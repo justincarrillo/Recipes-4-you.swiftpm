@@ -25,6 +25,7 @@ struct SnackView: View {
                     ForEach(0..<1) { _ in
                         SnackButton1()
                         SnackButton2()
+                        SnackButton3()
                     }
                 }
                 .padding()

@@ -25,11 +25,9 @@ struct BreakFastView: View {
                 
                 BreakfastButton1()
                 BreakfastButton2()
+                BreakfastButton3()
                 
             }
-            //        .padding()
-            
         }
-        //     .frame(height: 350)
     }
 }
