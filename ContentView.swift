@@ -92,7 +92,20 @@ struct ContentView: View {
                                                 .cornerRadius(10)
                                         }
                                         
-                                        Spacer()
+                                        VStack{
+                                            NavigationLink{
+                                                AllRecipesView()
+                                            }label:{
+                                                Text("All Recipes")
+                                                    .font(.system(size:50))
+                                                    .padding()
+                                                    .foregroundColor(.white)
+                                                    .background(Color.mint
+                                                    )
+                                                    .cornerRadius(10)
+                                            }
+                                            Spacer()
+                                        }
                                     }
                                 }
                             }

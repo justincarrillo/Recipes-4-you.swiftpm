@@ -17,8 +17,7 @@ struct Drink1: View {
             Text("- Straws (optional) ")
             Text("- Drink umbrellas (optional) ")
             
-                .foregroundColor(.white)
-                .frame(width: 500, height: 20)
+             
             
             Text("Steps:")
                 .font(.headline)
@@ -27,7 +26,7 @@ struct Drink1: View {
             
             Text("1. Pour 1 ounce of  grenidine for every four ounces of soda ")
             Text("2. Garnish with Candied Cherries and add a  straw or  Mini umbrellas to make it fancy")
-                .foregroundColor(.white)
+           
         }
         .padding()
         .background(Color.orange)
