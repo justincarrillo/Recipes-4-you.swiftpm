@@ -25,6 +25,7 @@ struct ContentView: View {
                         BreakFastView()
                     }label:{
                         Text("Breakfast")
+                            .frame(width: 200)
                             .font(.system(size:50))
                             .padding()
                             .foregroundColor(.white)
@@ -37,6 +38,7 @@ struct ContentView: View {
                             LunchView()
                         }label:{
                             Text("Lunch")
+                                .frame(width: 200)
                                 .font(.system(size:50))
                                 .padding()
                                 .foregroundColor(.white)
@@ -49,6 +51,7 @@ struct ContentView: View {
                                 DinnerView()
                             }label:{
                                 Text("Dinner")
+                                    .frame(width: 200)
                                     .font(.system(size:50))
                                     .padding()
                                     .foregroundColor(.white)
@@ -61,6 +64,7 @@ struct ContentView: View {
                                     SnackView()
                                 }label:{
                                     Text("Snack")
+                                        .frame(width: 200)
                                         .font(.system(size:50))
                                         .padding()
                                         .foregroundColor(.white)
@@ -73,6 +77,7 @@ struct ContentView: View {
                                         DessertView()
                                     }label:{
                                         Text("Dessert")
+                                            .frame(width: 200)
                                             .font(.system(size:50))
                                             .padding()
                                             .foregroundColor(.white)
@@ -86,6 +91,7 @@ struct ContentView: View {
                                             DrinkView()
                                         }label:{
                                             Text("Drink")
+                                                .frame(width: 200)
                                                 .font(.system(size:50))
                                                 .padding()
                                                 .foregroundColor(.white)
@@ -99,6 +105,7 @@ struct ContentView: View {
                                                 AllRecipesView()
                                             }label:{
                                                 Text("All Recipes")
+                                                    .frame(width: 200)
                                                     .font(.system(size:50))
                                                     .padding()
                                                     .foregroundColor(.white)
