@@ -19,45 +19,32 @@ struct ContentView: View {
         
         NavigationStack {
             ScrollView{
-            VStack(spacing: 20) {
-                Text("Recipes 4 You")
-                    .font(.system(size:40))
-                Spacer()
-                Spacer()
-                Spacer()
-                
-                
-                VStack{
-                    NavigationLink{
-                        BreakFastView()
-                    }label:{
-                        Text("Breakfast")
-                            .frame(width: 200)
-                            .font(.system(size:50))
-                            .padding()
-                            .foregroundColor(.white)
-                            .background(Color.blue)
-                            .cornerRadius(10)
-                    }
+                VStack(spacing: 20) {
+                    Text("Recipes 4 You")
+                        .font(.system(size:40))
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    
                     
                     VStack{
                         NavigationLink{
                             BreakFastView()
                         }label:{
-                            Text("Lunch")
+                            Text("Breakfast")
                                 .frame(width: 200)
                                 .font(.system(size:50))
                                 .padding()
                                 .foregroundColor(.white)
-                                .background(Color.blue.opacity(1.0))
+                                .background(Color.blue)
                                 .cornerRadius(10)
                         }
                         
                         VStack{
                             NavigationLink{
-                                LunchView()
+                                BreakFastView()
                             }label:{
-                                Text("Dinner")
+                                Text("Lunch")
                                     .frame(width: 200)
                                     .font(.system(size:50))
                                     .padding()
@@ -68,22 +55,22 @@ struct ContentView: View {
                             
                             VStack{
                                 NavigationLink{
-                                    DinnerView()
+                                    LunchView()
                                 }label:{
-                                    Text("Snack")
+                                    Text("Dinner")
                                         .frame(width: 200)
                                         .font(.system(size:50))
                                         .padding()
                                         .foregroundColor(.white)
-                                        .background(Color.blue.opacity(0.8))
+                                        .background(Color.blue.opacity(1.0))
                                         .cornerRadius(10)
                                 }
                                 
                                 VStack{
                                     NavigationLink{
-                                        SnackView()
+                                        DinnerView()
                                     }label:{
-                                        Text("Dessert")
+                                        Text("Snack")
                                             .frame(width: 200)
                                             .font(.system(size:50))
                                             .padding()
@@ -91,24 +78,24 @@ struct ContentView: View {
                                             .background(Color.blue.opacity(0.8))
                                             .cornerRadius(10)
                                     }
+                                    
                                     VStack{
                                         NavigationLink{
-                                            DessertView()
+                                            SnackView()
                                         }label:{
-                                            Text("Drink")
+                                            Text("Dessert")
                                                 .frame(width: 200)
                                                 .font(.system(size:50))
                                                 .padding()
                                                 .foregroundColor(.white)
-                                                .background(Color.blue.opacity(0.5))
+                                                .background(Color.blue.opacity(0.8))
                                                 .cornerRadius(10)
                                         }
-                                        
                                         VStack{
                                             NavigationLink{
-                                                DrinkView()
+                                                DessertView()
                                             }label:{
-                                                Text("All Recipes")
+                                                Text("Drink")
                                                     .frame(width: 200)
                                                     .font(.system(size:50))
                                                     .padding()
@@ -119,16 +106,30 @@ struct ContentView: View {
                                             
                                             VStack{
                                                 NavigationLink{
-                                                    AllRecipesView()
+                                                    DrinkView()
                                                 }label:{
                                                     Text("All Recipes")
+                                                        .frame(width: 200)
                                                         .font(.system(size:50))
                                                         .padding()
                                                         .foregroundColor(.white)
-                                                        .background(Color.blue.opacity(0.1))
+                                                        .background(Color.blue.opacity(0.5))
                                                         .cornerRadius(10)
                                                 }
-                                                Spacer()
+                                                
+                                                VStack{
+                                                    NavigationLink{
+                                                        AllRecipesView()
+                                                    }label:{
+                                                        Text("All Recipes")
+                                                            .font(.system(size:50))
+                                                            .padding()
+                                                            .foregroundColor(.white)
+                                                            .background(Color.blue.opacity(0.1))
+                                                            .cornerRadius(10)
+                                                    }
+                                                    Spacer()
+                                                }
                                             }
                                         }
                                     }
@@ -136,10 +137,10 @@ struct ContentView: View {
                             }
                         }
                     }
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(backgroundGradient)
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(backgroundGradient)
             }
         }
     }
-
+}
