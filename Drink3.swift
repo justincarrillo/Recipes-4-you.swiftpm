@@ -13,7 +13,7 @@ struct Drink3: View{
             Text("Jamaica")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-            Image("Uknown-3")
+            Image("Unknown-3")
                 .resizable()
                 .frame(width: 200, height: 100)
             Text("Ingredients:")
