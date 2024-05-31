@@ -18,7 +18,7 @@ struct DrinkButton3: View {
                         .foregroundColor(.gray)
                         .frame(width: 300, height: 200)
                         .border(Color.black, width: 2)
-                    Image("Shirley Temple")
+                    Image("jamiaca")
                         .resizable()
                         .frame(width: 300, height: 200)
                 }
