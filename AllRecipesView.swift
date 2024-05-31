@@ -46,6 +46,7 @@ struct AllRecipesView: View {
                 DrinkButton1()
                 DrinkButton2()
                 
+                
             }
         }
         
