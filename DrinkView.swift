@@ -21,6 +21,7 @@ struct DrinkView: View {
                     ForEach(0..<1) { _ in
                         DrinkButton1()
                         DrinkButton2()
+                        DrinkButton3()
                     }
                     
                 }
