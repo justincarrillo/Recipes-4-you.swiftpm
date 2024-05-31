@@ -9,7 +9,9 @@ struct Meal {
 
 struct ContentView: View {
     var body: some View {
+        
         NavigationStack {
+            ScrollView{
             VStack(spacing: 20) {
                 Text("Recipes 4 You")
                     .font(.system(size:40))
@@ -104,6 +106,7 @@ struct ContentView: View {
                                                     )
                                                     .cornerRadius(10)
                                             }
+                                        }
                                             Spacer()
                                         }
                                     }
