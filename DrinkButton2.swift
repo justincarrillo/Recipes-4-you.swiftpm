@@ -11,11 +11,11 @@ struct DrinkButton2: View {
                         .foregroundColor(.gray)
                         .frame(width: 300, height: 200)
                         .border(Color.black, width: 2)
-                    Image("Smoothie")
+                    Image("Horchata-recipe")
                         .resizable()
                         .frame(width: 300, height: 200)
                 }
-                Text("Protein Smoothie")
+                Text("Horchata")
                     .font(.headline)
                     .padding(.top, 8)
                     .foregroundColor(.black)
