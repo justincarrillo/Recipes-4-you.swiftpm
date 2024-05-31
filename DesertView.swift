@@ -26,6 +26,7 @@ struct DessertView: View {
                     ForEach(0..<1) { _ in
                         DessertButton1()
                         DessertButton2()
+                        DessertButton3()
                    }
 
                 }
