@@ -76,7 +76,7 @@ struct Drink3: View{
                 .font(.caption)
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)
-            Text("7. Stir in the white sugar untill dissolved, then pour in enough cold water to fill the pitcher. serve immeiately or let stand overnight for best taste.")
+            Text("7. Stir in the white sugar untill dissolved, then pour in enough cold water to fill the pitcher. Serve immeiately or let stand overnight for best taste.")
                 .font(.caption)
                 .foregroundColor(.white)
                 .multilineTextAlignment(.center)

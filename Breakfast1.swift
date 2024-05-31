@@ -56,7 +56,7 @@ struct BreakFast1: View {
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
                 
-                Text("3. cook until bubbles form and the edges are dry, about 2 to 3 minutes.")
+                Text("3. Cook until bubbles form and the edges are dry, about 2 to 3 minutes.")
                     .font(.caption)
                     .foregroundColor(.white)
                     .multilineTextAlignment(.center)
