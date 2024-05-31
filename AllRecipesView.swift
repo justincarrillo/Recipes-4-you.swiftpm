@@ -22,7 +22,6 @@ struct AllRecipesView: View {
         
         ScrollView {
             VStack(spacing: 20) {
-              //add recipes below
                 BreakfastButton1()
                 BreakfastButton2()
                 BreakfastButton3()
