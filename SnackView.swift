@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct SnackView: View {
+    @State var backgroundGradient = LinearGradient(
+        colors: [Color.white, Color.blue],
+        startPoint: .top, endPoint: .bottom)
     var body: some View {
         VStack{
             RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
-                .fill(.yellow)
+                .fill(.blue)
                 .frame(width: 300, height: 70)
                 .overlay{
                     Text("Snack Recipes")
@@ -30,7 +33,9 @@ struct SnackView: View {
                 }
                 .padding()
             }
-            .frame(height: 350)
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(backgroundGradient)
+
         }
     }
 }

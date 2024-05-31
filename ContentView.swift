@@ -7,104 +7,110 @@ struct Meal {
     let time: String
 }
 
+//let backgroundGradient = LinearGradient(
+//    colors: [Color.white, Color.blue],
+//    startPoint: .top, endPoint: .bottom)
+
 struct ContentView: View {
+    @State var backgroundGradient = LinearGradient(
+        colors: [Color.white, Color.blue],
+        startPoint: .top, endPoint: .bottom)
     var body: some View {
-        NavigationStack {
-            VStack(spacing: 20) {
-                Text("Recipes 4 You")
-                    .font(.system(size:40))
-                Spacer()
-                Spacer()
-                Spacer()
-                
-                
-                VStack{
-                    NavigationLink{
-                        BreakFastView()
-                    }label:{
-                        Text("Breakfast")
-                            .font(.system(size:50))
-                            .padding()
-                            .foregroundColor(.white)
-                            .background(Color.blue)
-                            .cornerRadius(10)
-                    }
+            NavigationStack {
+                VStack(spacing: 20) {
+                    Text("Recipes 4 You")
+                        .font(.system(size:40))
+                        .foregroundColor(.blue)
+                        .fontWeight(.bold)
+                    Spacer()
+                    Spacer()
+                    Spacer()
+                    
                     
                     VStack{
                         NavigationLink{
-                            LunchView()
+                            BreakFastView()
                         }label:{
-                            Text("Lunch")
+                            Text("Breakfast")
                                 .font(.system(size:50))
                                 .padding()
                                 .foregroundColor(.white)
-                                .background(Color.pink)
+                                .background(Color.blue.opacity(1.0))
                                 .cornerRadius(10)
                         }
                         
                         VStack{
                             NavigationLink{
-                                DinnerView()
+                                LunchView()
                             }label:{
-                                Text("Dinner")
+                                Text("Lunch")
                                     .font(.system(size:50))
                                     .padding()
                                     .foregroundColor(.white)
-                                    .background(Color.green)
+                                    .background(Color.blue.opacity(1.0))
                                     .cornerRadius(10)
                             }
                             
                             VStack{
                                 NavigationLink{
-                                    SnackView()
+                                    DinnerView()
                                 }label:{
-                                    Text("Snack")
+                                    Text("Dinner")
                                         .font(.system(size:50))
                                         .padding()
                                         .foregroundColor(.white)
-                                        .background(Color.yellow
-                                        )
+                                        .background(Color.blue.opacity(0.8))
                                         .cornerRadius(10)
                                 }
+                                
                                 VStack{
                                     NavigationLink{
-                                        DessertView()
+                                        SnackView()
                                     }label:{
-                                        Text("Dessert")
+                                        Text("Snack")
                                             .font(.system(size:50))
                                             .padding()
                                             .foregroundColor(.white)
-                                            .background(Color.purple
-                                            )
+                                            .background(Color.blue.opacity(0.8))
                                             .cornerRadius(10)
                                     }
-                                    
                                     VStack{
                                         NavigationLink{
-                                            DrinkView()
+                                            DessertView()
                                         }label:{
-                                            Text("Drink")
+                                            Text("Dessert")
                                                 .font(.system(size:50))
                                                 .padding()
                                                 .foregroundColor(.white)
-                                                .background(Color.orange
-                                                )
+                                                .background(Color.blue.opacity(0.5))
                                                 .cornerRadius(10)
                                         }
                                         
                                         VStack{
                                             NavigationLink{
-                                                AllRecipesView()
+                                                DrinkView()
                                             }label:{
-                                                Text("All Recipes")
+                                                Text("Drink")
                                                     .font(.system(size:50))
                                                     .padding()
                                                     .foregroundColor(.white)
-                                                    .background(Color.mint
-                                                    )
+                                                    .background(Color.blue.opacity(0.5))
                                                     .cornerRadius(10)
                                             }
-                                            Spacer()
+                                            
+                                            VStack{
+                                                NavigationLink{
+                                                    AllRecipesView()
+                                                }label:{
+                                                    Text("All Recipes")
+                                                        .font(.system(size:50))
+                                                        .padding()
+                                                        .foregroundColor(.white)
+                                                        .background(Color.blue.opacity(0.1))
+                                                        .cornerRadius(10)
+                                                }
+                                                Spacer()
+                                            }
                                         }
                                     }
                                 }
@@ -112,7 +118,9 @@ struct ContentView: View {
                         }
                     }
                 }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(backgroundGradient)
             }
         }
     }
-}
+

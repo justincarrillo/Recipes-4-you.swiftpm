@@ -8,15 +8,21 @@
 import SwiftUI
 
 struct DinnerView: View {
+    @State var backgroundGradient = LinearGradient(
+        colors: [Color.white, Color.blue],
+        startPoint: .top, endPoint: .bottom)
     var body: some View {
         VStack{
             RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
-                .fill(.green)
+                .fill(.blue)
                 .frame(width: 300, height: 70)
                 .overlay{
                     Text("Dinner Recipes")
                         .font(.system(size:30))
                 }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .background(backgroundGradient)
+
         }
         Divider()
         
@@ -31,7 +37,8 @@ struct DinnerView: View {
             }
             .padding()
         }
-        .frame(height: 350)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(backgroundGradient)
     }
 }
             

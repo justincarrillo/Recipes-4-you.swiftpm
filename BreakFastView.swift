@@ -7,6 +7,9 @@
 import SwiftUI
 
 struct BreakFastView: View {
+    @State var backgroundGradient = LinearGradient(
+        colors: [Color.white, Color.blue],
+        startPoint: .top, endPoint: .bottom)
     var body: some View {
         VStack{
             RoundedRectangle(cornerSize: CGSize(width: 20, height: 20))
@@ -28,6 +31,9 @@ struct BreakFastView: View {
                 BreakfastButton3()
                 
             }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(backgroundGradient)
+
         }
     }
 }
