@@ -47,7 +47,7 @@ struct AllRecipesView: View {
                 
                 DrinkButton1()
                 DrinkButton2()
-                
+                DrinkButton3()
                 
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)

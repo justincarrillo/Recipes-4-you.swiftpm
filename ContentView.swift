@@ -16,22 +16,36 @@ struct ContentView: View {
         colors: [Color.white, Color.blue],
         startPoint: .top, endPoint: .bottom)
     var body: some View {
-            NavigationStack {
-                VStack(spacing: 20) {
-                    Text("Recipes 4 You")
-                        .font(.system(size:40))
-                        .foregroundColor(.blue)
-                        .fontWeight(.bold)
-                    Spacer()
-                    Spacer()
-                    Spacer()
-                    
+        
+        NavigationStack {
+            ScrollView{
+            VStack(spacing: 20) {
+                Text("Recipes 4 You")
+                    .font(.system(size:40))
+                Spacer()
+                Spacer()
+                Spacer()
+                
+                
+                VStack{
+                    NavigationLink{
+                        BreakFastView()
+                    }label:{
+                        Text("Breakfast")
+                            .frame(width: 200)
+                            .font(.system(size:50))
+                            .padding()
+                            .foregroundColor(.white)
+                            .background(Color.blue)
+                            .cornerRadius(10)
+                    }
                     
                     VStack{
                         NavigationLink{
                             BreakFastView()
                         }label:{
-                            Text("Breakfast")
+                            Text("Lunch")
+                                .frame(width: 200)
                                 .font(.system(size:50))
                                 .padding()
                                 .foregroundColor(.white)
@@ -43,7 +57,8 @@ struct ContentView: View {
                             NavigationLink{
                                 LunchView()
                             }label:{
-                                Text("Lunch")
+                                Text("Dinner")
+                                    .frame(width: 200)
                                     .font(.system(size:50))
                                     .padding()
                                     .foregroundColor(.white)
@@ -55,7 +70,8 @@ struct ContentView: View {
                                 NavigationLink{
                                     DinnerView()
                                 }label:{
-                                    Text("Dinner")
+                                    Text("Snack")
+                                        .frame(width: 200)
                                         .font(.system(size:50))
                                         .padding()
                                         .foregroundColor(.white)
@@ -67,7 +83,8 @@ struct ContentView: View {
                                     NavigationLink{
                                         SnackView()
                                     }label:{
-                                        Text("Snack")
+                                        Text("Dessert")
+                                            .frame(width: 200)
                                             .font(.system(size:50))
                                             .padding()
                                             .foregroundColor(.white)
@@ -78,7 +95,8 @@ struct ContentView: View {
                                         NavigationLink{
                                             DessertView()
                                         }label:{
-                                            Text("Dessert")
+                                            Text("Drink")
+                                                .frame(width: 200)
                                                 .font(.system(size:50))
                                                 .padding()
                                                 .foregroundColor(.white)
@@ -90,7 +108,8 @@ struct ContentView: View {
                                             NavigationLink{
                                                 DrinkView()
                                             }label:{
-                                                Text("Drink")
+                                                Text("All Recipes")
+                                                    .frame(width: 200)
                                                     .font(.system(size:50))
                                                     .padding()
                                                     .foregroundColor(.white)
